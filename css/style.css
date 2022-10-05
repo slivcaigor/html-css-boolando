@@ -9,3 +9,10 @@
   width: 70%;
   margin: auto;
 }
+
+.header {
+  background-color: rgb(100%, 41%, 0%);
+  box-shadow: 0 10px #888888;
+  /* debug */
+  height: 150px;
+}
