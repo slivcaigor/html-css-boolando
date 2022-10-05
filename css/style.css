@@ -179,3 +179,48 @@ body {
 .imgs:hover .img-top {
   display: inline;
 }
+
+/* Styling Footer */
+
+footer {
+  margin-top: 50px;
+  background-color: rgb(26, 26, 26);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.footer-top span {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#social {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer-bottom {
+  display: flex;
+  padding: 10px 0 30px 0;
+  justify-content: space-between;
+}
+
+.policy a {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0 5px 0 0;
+  color: white;
+}
+
+.socials i {
+  color: white;
+  font-size: 20px;
+  padding-left: 5px;
+}
