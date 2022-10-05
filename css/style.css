@@ -65,3 +65,90 @@ body {
 .icons i {
   padding-right: 10px;
 }
+
+/* Main Styling */
+
+.row {
+  padding: 50px 0 0;
+  margin: 10px 0;
+  display: flex;
+}
+
+.product {
+  margin: 0 10px;
+  position: relative;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product img:not(:first-child):not(:last-child) {
+  padding: 0 20px;
+}
+
+.label {
+  position: absolute;
+  background-color: red;
+  font-size: 14px;
+  color: aliceblue;
+  bottom: 100px;
+  left: 0;
+  padding: 4px 10px;
+  font-weight: 700;
+}
+
+.green {
+  position: absolute;
+  background-color: green;
+  font-size: 14px;
+  color: aliceblue;
+  bottom: 100px;
+  left: 55px;
+  padding: 4px 10px;
+  font-weight: 700;
+}
+
+.lft-grn {
+  position: absolute;
+  background-color: green;
+  font-size: 14px;
+  color: aliceblue;
+  bottom: 100px;
+  left: 0px;
+  padding: 4px 10px;
+  font-weight: 700;
+}
+
+.heart {
+  font-size: 40px;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background-color: white;
+  padding: 5px 15px;
+}
+
+.product:hover .heart {
+  color: red;
+}
+
+.brand {
+  font-size: 15px;
+}
+
+.product-name {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product-price {
+  color: red;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.product-discounted {
+  text-decoration: line-through;
+  font-size: 14px;
+}
