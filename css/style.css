@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-.container {
+.aligned {
   width: 72%;
   margin: auto;
 }
@@ -26,7 +26,7 @@ body {
   display: flex;
   position: fixed;
   width: 100%;
-  z-index: 555;
+  z-index: 999;
   top: 0;
   left: 0;
 }
@@ -68,6 +68,12 @@ body {
 
 /* Main Styling */
 
+.container {
+  width: 100%;
+  margin: 0 10px;
+  position: relative;
+}
+
 .row {
   padding: 50px 0 0;
   margin: 10px 0;
@@ -75,6 +81,7 @@ body {
 }
 
 .product {
+  width: 100%;
   margin: 0 10px;
   position: relative;
 }
@@ -87,7 +94,9 @@ body {
   padding: 0 20px;
 }
 
+/* Styling labels */
 .label {
+  z-index: 555;
   position: absolute;
   background-color: red;
   font-size: 14px;
@@ -99,6 +108,7 @@ body {
 }
 
 .green {
+  z-index: 555;
   position: absolute;
   background-color: green;
   font-size: 14px;
@@ -110,6 +120,7 @@ body {
 }
 
 .lft-grn {
+  z-index: 555;
   position: absolute;
   background-color: green;
   font-size: 14px;
@@ -120,7 +131,9 @@ body {
   font-weight: 700;
 }
 
+/* Styling heart */
 .heart {
+  z-index: 555;
   font-size: 40px;
   position: absolute;
   top: 10px;
@@ -129,10 +142,11 @@ body {
   padding: 5px 15px;
 }
 
-.product:hover .heart {
+.heart:hover {
   color: red;
 }
 
+/* Styling Product Info */
 .brand {
   font-size: 15px;
 }
@@ -151,4 +165,17 @@ body {
 .product-discounted {
   text-decoration: line-through;
   font-size: 14px;
+}
+
+/* Styling image hover change */
+.img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 444;
+}
+
+.imgs:hover .img-top {
+  display: inline;
 }
